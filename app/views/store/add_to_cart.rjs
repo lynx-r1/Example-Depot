@@ -5,3 +5,5 @@ page.replace_html "cart", :partial => "cart", :object => @cart
 page[:current_item].visual_effect :highlight,
   :startcolor => "#88ff88",
   :endcolor => "#1144111"
+
+#page[:current_item].visual_effect :blind_down

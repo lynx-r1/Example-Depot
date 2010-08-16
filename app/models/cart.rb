@@ -13,8 +13,20 @@ class Cart
     if current_item
       current_item.increment_quantity
     else
-      current_item =CartItem.new(product)
+      current_item = CartItem.new(product)
       @items << current_item
+    end
+    current_item
+  end
+
+  def del_product(product)
+    current_item = @items.find {|item| item.product == product}
+    if current_item
+      current_item.decrement_quantity
+      if current_item.quantity == 0
+        @items.delete(current_item)
+        current_item = nil
+      end
     end
     current_item
   end
