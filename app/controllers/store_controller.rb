@@ -3,6 +3,7 @@ class StoreController < ApplicationController
     @products = Product.find_products_for_sale
     @cart = find_cart
     @time = Time.now.ctime
+    @checkout = false
 
     session[:counter] = 1 if session[:counter].nil?
     session[:counter] += 1
@@ -28,7 +29,38 @@ class StoreController < ApplicationController
     product = Product.find(params[:id])
     @cart = find_cart
     @current_item = @cart.del_product(product)
-    respond_to_js_or_html
+    respond_to do |format|
+      format.js if request.xhr?
+      format.html {
+        redirect_to_index
+        @cart.del_item(@current_item) if @current_item.quantity == 0
+      }
+    end
+  end
+
+  def checkout
+    @cart = find_cart
+    if @cart.items.empty?
+      redirect_to_index("Your cart is empty")
+      @checkout = false
+    else
+      @order = Order.new
+      @checkout = true
+    end
+  end
+
+  def save_order
+    @cart = find_cart
+    @order = Order.new(params[:order])
+    @order.add_line_items_from_cart(@cart)
+    if @order.save
+      session[:cart] = nil
+      redirect_to_index("Thank you for your order")
+      @checkout = false
+    else
+      render :action => 'checkout'
+      @checkout = true
+    end
   end
 
   private
