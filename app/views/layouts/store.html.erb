@@ -24,9 +24,19 @@
         <a href="http://www..../faq">Questions</a><br />
         <a href="http://www..../news">New</a><br />
         <a href="http://www..../contact">Contact</a><br />
-        <%= @time %>
+        <%#= @time %>
+
+        <br />
+        <%= link_to 'Store', :controller => 'store' %><br />
+
+        <% unless session[:user_id] %>
+          <br />
+          <%= link_to 'Log in', :controller => 'admin', :action => 'login' %><br />
+        <% end %>
 
         <% if session[:user_id] %>
+          <br />
+          <%= link_to 'Admin',    :controller => 'admin' %><br />
           <br />
           <%= link_to 'Orders',   :controller => 'orders' %><br />
           <%= link_to 'Products', :controller => 'products' %><br />
@@ -40,7 +50,8 @@
         <div id="notice"><%= flash[:notice] %></div>
         <% end -%>
         <span id="counter">
-          <% if params[:action] == 'index' and session[:counter] > 5 %>
+          <% if params[:action] == 'index' && session[:counter] \
+            && session[:counter] > 5 %>
           You visited this page <%= pluralize(session[:counter], 'time') %>
           <% end %>
         </span>

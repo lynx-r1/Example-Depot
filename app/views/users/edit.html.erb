@@ -1,24 +1,29 @@
+<div class="depot-form">
 <h1>Editing user</h1>
 
 <% form_for(@user) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :name, 'Name' %>:
     <%= f.text_field :name %>
   </p>
+
   <p>
-    <%= f.label :hashed_password %><br />
-    <%= f.text_field :hashed_password %>
+    <%= f.label :password, 'Password' %>:
+    <%= f.password_field :password, :size => 40 %>
   </p>
+
   <p>
-    <%= f.label :salt %><br />
-    <%= f.text_field :salt %>
+    <%= f.label :password_confirmation, 'Confirm' %>:
+    <%= f.password_field :password_confirmation, :size => 40 %>
   </p>
+
   <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
+</div>
 
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>

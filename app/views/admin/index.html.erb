@@ -2,3 +2,5 @@
 
 It's <%= Time.now %>
 We have <%= pluralize(@total_orders, "order") %>.
+<br />
+Store was visited <%= pluralize(session[:counter], 'time') %>.

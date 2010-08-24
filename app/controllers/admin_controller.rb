@@ -1,7 +1,12 @@
 class AdminController < ApplicationController
   def login
     if request.post?
-      user = User.authenticate(params[:name], params[:password])
+      if User.count.zero?
+        user = User.create(:name => params[:name], :password => params[:password],
+          :password_confirmation => params[:password_confirmation])
+      else
+        user = User.authenticate(params[:name], params[:password])
+      end
       if user
         session[:user_id] = user.id
         uri = session[:original_uri]

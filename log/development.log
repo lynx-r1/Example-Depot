@@ -28783,3 +28783,1834 @@ Processing StoreController#empty_cart (for 127.0.0.1 at 2010-08-24 19:16:42) [PO
   Parameters: {"commit"=>"Empty cart", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA="}
 Rendering store/empty_cart
 Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 20:03:09) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.2ms)
+Completed in 81ms (View: 21, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:03:14) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:03:23) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 20:03:23) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 20:04:19) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2010-08-24 20:04:23) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:04:23) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:06:09) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 20:06:13) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.8ms)
+Completed in 82ms (View: 73, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:06:15) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:06:21) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 20:06:21) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 20:06:25) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.4ms)
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-24 20:06:27) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/store
+Rendering orders/index
+Completed in 26ms (View: 13, DB: 1) | 200 OK [http://localhost/orders]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-24 20:06:29) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:06:31) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 18ms (View: 6, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 20:06:33) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.2ms)
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2010-08-24 20:06:36) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:06:37) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 20:06:40) [GET]
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.3ms)
+Completed in 82ms (View: 74, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:08:40) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:09:08) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 20:09:09) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:09:23) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-24 20:09:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 25ms (View: 13, DB: 1) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-24 20:14:33) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 32ms (View: 11, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-08-24 20:14:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering products/edit
+Completed in 28ms (View: 15, DB: 1) | 200 OK [http://localhost/products/3/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:15:39) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-24 20:15:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-24 20:16:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-24 20:16:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-24 20:17:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-08-24 20:17:11) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"2", "user"=>{"name"=>"lynx_r", "password_confirmation"=>"secret", "password"=>"secret"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r' AND "users".id <> 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-08-24 16:17:11', "salt" = '-6153867580.668122685054139', "hashed_password" = '18c5fbcf1e00b25db874dec260eaa354f6e2707c' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/users
+Completed in 175ms (DB: 1) | 302 Found [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:17:11) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-24 20:17:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering users/edit
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:17:20) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:17:29) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:17:50) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-24 20:17:59) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:18:02) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 20:26:55) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.2ms)
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-08-24 20:26:58) [POST]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (5.8ms)
+Rendered store/_cart (8.3ms)
+Completed in 24ms (View: 11, DB: 1) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-08-24 20:26:59) [POST]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"3"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (5.0ms)
+Rendered store/_cart (7.6ms)
+Completed in 22ms (View: 10, DB: 1) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-08-24 20:27:01) [POST]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (5.2ms)
+Rendered store/_cart (7.7ms)
+Completed in 23ms (View: 10, DB: 1) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-08-24 20:27:03) [POST]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA="}
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (5.5ms)
+Rendered store/_cart (7.8ms)
+Completed in 33ms (View: 19, DB: 1) | 200 OK [http://localhost/store/checkout]
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-08-24 20:27:14) [POST]
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "order"=>{"address"=>"sdfdsf", "name"=>"zcfdsf", "pay_type"=>"check", "email"=>"sdfdsf"}}
+  [4;36;1mOrder Create (0.3ms)[0m   [0;1mINSERT INTO "orders" ("name", "address", "created_at", "updated_at", "pay_type", "email") VALUES('zcfdsf', 'sdfdsf', '2010-08-24 16:27:14', '2010-08-24 16:27:14', 'check', 'sdfdsf')[0m
+  [4;35;1mLineItem Create (0.1ms)[0m   [0mINSERT INTO "line_items" ("created_at", "product_id", "quantity", "order_id", "total_price", "updated_at") VALUES('2010-08-24 16:27:14', 3, 3, 5, 85.5, '2010-08-24 16:27:14')[0m
+Redirected to http://localhost:3000/store
+Completed in 178ms (DB: 1) | 302 Found [http://localhost/store/save_order]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 20:27:15) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.4ms)
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-08-24 20:27:20) [POST]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"3"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (5.2ms)
+Rendered store/_cart (7.6ms)
+Completed in 22ms (View: 10, DB: 1) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-08-24 20:27:24) [POST]
+  Parameters: {"commit"=>"Empty cart", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA="}
+Rendering store/empty_cart
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://localhost/store/empty_cart]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-08-24 20:29:50) [POST]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"3"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.6ms)
+Rendered store/_cart (7.0ms)
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-08-24 20:29:53) [POST]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA="}
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (5.9ms)
+Rendered store/_cart (9.0ms)
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://localhost/store/checkout]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:40:30) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 20ms (View: 6, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2010-08-24 20:40:34) [DELETE]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"2"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mUser Destroy (0.2ms)[0m   [0mDELETE FROM "users" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+NameError (undefined local variable or method `e' for #<UsersController:0xb6918618>):
+  app/controllers/users_controller.rb:82:in `destroy'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2010-08-24 20:41:39) [DELETE]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"2"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mUser Destroy (0.2ms)[0m   [0mDELETE FROM "users" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/users
+Completed in 78ms (DB: 1) | 302 Found [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:41:39) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mUser Destroy (0.6ms)[0m   [0mDELETE FROM "users" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2010-08-24 20:43:32) [DELETE]
+  Parameters: {"authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "id"=>"2"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mUser Destroy (0.2ms)[0m   [0mDELETE FROM "users" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/users
+Completed in 109ms (DB: 1) | 302 Found [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 20:43:32) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:43:32) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 16ms (View: 13, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:43:41) [POST]
+  Parameters: {"name"=>"sdf", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>""}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/admin_controller.rb:6:in `login'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 20:45:36) [POST]
+  Parameters: {"name"=>"sdf", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>""}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'sdf') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 17ms (View: 4, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:09:21) [POST]
+  Parameters: {"name"=>"sdf", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>""}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/admin_controller.rb:5:in `initialize'
+  app/controllers/admin_controller.rb:5:in `new'
+  app/controllers/admin_controller.rb:5:in `login'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:20) [POST]
+  Parameters: {"name"=>"sdf", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>""}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/admin/login?%2Fusers=index
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:20) [GET]
+  Parameters: {"/users"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://localhost/admin/login?%2Fusers=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:23) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/admin
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:10:23) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:23) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:41) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:41) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-24 21:10:47) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/orders]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:47) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 15ms (View: 12, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:50) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/admin/login?%2Forders=index
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:50) [GET]
+  Parameters: {"/orders"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/admin/login?%2Forders=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:53) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/admin
+Completed in 76ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:10:53) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:10:53) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:14:55) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:14:57) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/users
+Completed in 71ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 21:14:57) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:14:58) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:15:02) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"nGYTdLtOrmmf3Il4JRxRx+QEby+c4AoDMbAwrMRqFWA=", "password"=>"secret"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Redirected to http://localhost:3000/users
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 21:15:02) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:15:02) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 75ms (View: 72, DB: 2) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2010-08-24 21:16:46) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:16:47) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2010-08-24 21:16:48) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:16:48) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:16:51) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (1.9ms)
+Rendered store/_cart (4.5ms)
+Completed in 30ms (View: 18, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (87.3ms)[0m   [0;1mDELETE FROM sessions[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:17:02) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.2ms)
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:17:05) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:17:08) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+NoMethodError (undefined method `stringify_keys!' for "lynx_r":String):
+  app/controllers/admin_controller.rb:5:in `new'
+  app/controllers/admin_controller.rb:5:in `login'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (89.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:17:51) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:17:55) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>""}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+NoMethodError (undefined method `stringify_keys!' for "lynx_r":String):
+  app/controllers/admin_controller.rb:5:in `new'
+  app/controllers/admin_controller.rb:5:in `login'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:05) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:19:05) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:05) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:08) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:10) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:10) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:13) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:19:13) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:13) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:16) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:19) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:19) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:51) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>""}
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:19:51) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:19:51) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:20:26) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:20:26) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 27ms (View: 25, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:20:28) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:20:28) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 7ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:20:29) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:21:50) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:21:50) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:21:53) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:21:54) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:21:56) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:21:56) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 7ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:21:56) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:21:58) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:02) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:05) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:06) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:18) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:21) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:22:21) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:22) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:24) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:25) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:22:34) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (3.5ms)
+Completed in 94ms (View: 26, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:36) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:38) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:22:38) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 7ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:22:38) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:23:01) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (4.4ms)
+Completed in 110ms (View: 93, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:23:10) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 16ms (View: 13, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:23:52) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 29116ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:24:22) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:24:32) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:24:37) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 7513ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:24:45) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 6062ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:24:51) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:24:54) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/login]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" IS NULL) LIMIT 1[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:28:32) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:28:35) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"4g6jt4HmTg9KHPbs8/kyEbz28Ad2FSCnykvPvKKroYI=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "updated_at", "hashed_password") VALUES('lynx_r', '-6153976880.575654784739493', '2010-08-24 17:28:35', '2010-08-24 17:28:35', 'ced2d72a9488f640aa1062848ffee133e8ca2e19')[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 94ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:28:35) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+  [4;36;1mSQL (88.3ms)[0m   [0;1mDELETE FROM sessions[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:04) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:07) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"5uk0a/GG4uKVFLyG5kDevPwoeKV2SncnFeh6u6N3Trg=", "password"=>"secret"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:29:07) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:08) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:13) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"5uk0a/GG4uKVFLyG5kDevPwoeKV2SncnFeh6u6N3Trg=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:13) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:16) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 64ms (View: 5, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:19) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"5uk0a/GG4uKVFLyG5kDevPwoeKV2SncnFeh6u6N3Trg=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:29:19) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:19) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:19) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"5uk0a/GG4uKVFLyG5kDevPwoeKV2SncnFeh6u6N3Trg=", "password"=>"secret"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:19) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+  [4;36;1mSQL (80.7ms)[0m   [0;1mDELETE FROM sessions[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:29:37) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 91ms (View: 88, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:30:09) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"OzaAsr3oTDa1vBF5uBJZhTKu3zfAwgjF0YhM3O1G+2I=", "password"=>"secret"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mUser Destroy (0.6ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:31:03) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 87ms (View: 84, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:31:09) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"OzaAsr3oTDa1vBF5uBJZhTKu3zfAwgjF0YhM3O1G+2I=", "password"=>"secret"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+  [4;36;1mUser Create (0.8ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "updated_at", "hashed_password") VALUES('lynx_r', '-6165992080.27252057372892', '2010-08-24 17:31:15', '2010-08-24 17:31:15', '092a426705a3e14dca7c8e658570a9338e7d798a')[0m
+Redirected to http://localhost:3000/admin
+Completed in 17397ms (DB: 2) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:31:27) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 17200ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:31:44) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:31:52) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (4.8ms)
+Completed in 101ms (View: 87, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (85.2ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:34:28) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 7685ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:34:36) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mUser Destroy (0.3ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 4[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:35:35) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:39:24) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"aaa9SpehsAruoP9lCFSi2zxgFpVDO0ajVktWqkzkRbE=", "password"=>"secret"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "updated_at", "hashed_password") VALUES('lynx_r', '-6181487680.983051896710094', '2010-08-24 17:39:29', '2010-08-24 17:39:29', 'f01367143189cfbd5cc427e3cd3d928a14271a66')[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 8051ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:39:32) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-24 21:39:40) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mOrder Load (0.8ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/store
+Rendering orders/index
+
+ActionView::TemplateError (undefined method `>' for nil:NilClass) on line #51 of app/views/layouts/store.html.erb:
+48:         <div id="notice"><%= flash[:notice] %></div>
+49:         <% end -%>
+50:         <span id="counter">
+51:           <% if params[:action] == 'index' and session[:counter] > 5 %>
+52:           You visited this page <%= pluralize(session[:counter], 'time') %>
+53:           <% end %>
+54:         </span>
+
+    app/views/layouts/store.html.erb:51
+    app/controllers/orders_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (56.9ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-24 21:42:07) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+
+ActionView::TemplateError (undefined method `>' for nil:NilClass) on line #51 of app/views/layouts/store.html.erb:
+48:         <div id="notice"><%= flash[:notice] %></div>
+49:         <% end -%>
+50:         <span id="counter">
+51:           <% if params[:action] == 'index' and session[:counter] > 5 %>
+52:           You visited this page <%= pluralize(session[:counter], 'time') %>
+53:           <% end %>
+54:         </span>
+
+    app/views/layouts/store.html.erb:51
+    app/controllers/products_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (52.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 21:42:19) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+
+ActionView::TemplateError (undefined method `>' for nil:NilClass) on line #51 of app/views/layouts/store.html.erb:
+48:         <div id="notice"><%= flash[:notice] %></div>
+49:         <% end -%>
+50:         <span id="counter">
+51:           <% if params[:action] == 'index' and session[:counter] > 5 %>
+52:           You visited this page <%= pluralize(session[:counter], 'time') %>
+53:           <% end %>
+54:         </span>
+
+    app/views/layouts/store.html.erb:51
+    app/controllers/users_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (126.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:42:28) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (3.3ms)
+Completed in 32ms (View: 21, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-24 21:42:30) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mOrder Load (0.4ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/store
+Rendering orders/index
+Completed in 36ms (View: 19, DB: 1) | 200 OK [http://localhost/orders]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-24 21:42:32) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 28ms (View: 13, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 21:42:33) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:42:35) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.8ms)
+Completed in 32ms (View: 21, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2010-08-24 21:42:41) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:42:42) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:42:47) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:42:53) [POST]
+  Parameters: {"name"=>"lynx_", "commit"=>"Login", "authenticity_token"=>"aaa9SpehsAruoP9lCFSi2zxgFpVDO0ajVktWqkzkRbE=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8739ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:43:07) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"aaa9SpehsAruoP9lCFSi2zxgFpVDO0ajVktWqkzkRbE=", "password"=>"secret"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:43:07) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 23ms (View: 8, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-24 21:43:09) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 27ms (View: 12, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2010-08-24 21:43:19) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:43:19) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 78ms (View: 75, DB: 1) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (167.6ms)[0m   [0;1mDELETE FROM sessions[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:43:27) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"aaa9SpehsAruoP9lCFSi2zxgFpVDO0ajVktWqkzkRbE=", "password"=>"secret"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (42.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:43:39) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (3.0ms)
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (84.6ms)[0m   [0;1mDELETE FROM sessions[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:43:51) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/admin]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:43:51) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:43:54) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"8egz/U6QWnM+2WscM4di+j8NfttGotn+BXbPrnHQJAg=", "password"=>"secret"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login?%2Fadmin=index
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:43:54) [GET]
+  Parameters: {"/admin"=>"index"}
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/admin/login?%2Fadmin=index]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-24 21:43:57) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mOrder Load (0.4ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/store
+Rendering orders/index
+
+ActionView::TemplateError (undefined method `>' for nil:NilClass) on line #51 of app/views/layouts/store.html.erb:
+48:         <div id="notice"><%= flash[:notice] %></div>
+49:         <% end -%>
+50:         <span id="counter">
+51:           <% if params[:action] == 'index' and session[:counter] > 5 %>
+52:           You visited this page <%= pluralize(session[:counter], 'time') %>
+53:           <% end %>
+54:         </span>
+
+    app/views/layouts/store.html.erb:51
+    app/controllers/orders_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-24 21:45:24) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mOrder Load (0.4ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/store
+Rendering orders/index
+Completed in 40ms (View: 27, DB: 1) | 200 OK [http://localhost/orders]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-24 21:45:27) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/store
+Rendering products/index
+Completed in 24ms (View: 12, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-24 21:45:28) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/store
+Rendering users/index
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-24 21:45:31) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mOrder Load (0.3ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/store
+Rendering orders/index
+Completed in 92ms (View: 80, DB: 1) | 200 OK [http://localhost/orders]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:45:32) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.7ms)
+Completed in 30ms (View: 19, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:45:34) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.8ms)
+Completed in 30ms (View: 20, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:45:35) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.7ms)
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:45:36) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.7ms)
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:45:38) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.8ms)
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:45:48) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 21ms (View: 4, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:46:00) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.8ms)
+Completed in 31ms (View: 21, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-08-24 21:48:36) [GET]
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.6ms)
+Completed in 35ms (View: 25, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:48:40) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 21ms (View: 5, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:49:59) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 25ms (View: 8, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:50:09) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 84ms (View: 10, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:50:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 20ms (View: 4, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2010-08-24 21:51:46) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:51:46) [GET]
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-08-24 21:51:51) [POST]
+  Parameters: {"name"=>"lynx_r", "commit"=>"Login", "authenticity_token"=>"8egz/U6QWnM+2WscM4di+j8NfttGotn+BXbPrnHQJAg=", "password"=>"secret"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'lynx_r') LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:51:51) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 19ms (View: 4, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-08-24 21:52:03) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 25ms (View: 11, DB: 1) | 200 OK [http://localhost/admin]
