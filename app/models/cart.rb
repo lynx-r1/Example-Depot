@@ -23,9 +23,7 @@ class Cart
     current_item = @items.find {|item| item.product == product}
     if current_item
       current_item.decrement_quantity
-#      if current_item.quantity == 0 and del
-#        @items.delete(current_item)
-#      end
+      @items.delete(current_item) if total_items.zero?
     end
     current_item
   end
