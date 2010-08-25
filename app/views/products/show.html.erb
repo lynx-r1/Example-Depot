@@ -14,10 +14,14 @@
 </p>
 
 <p>
-	<b>Price:</b>
-	<%=h @product.price %>
+  <b>Price:</b>
+  <%=h @product.price %>
 </p>
 
+<p>
+  <b>Language:</b>
+  <%=h @product.locale %>
+</p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

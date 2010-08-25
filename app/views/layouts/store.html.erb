@@ -9,9 +9,15 @@
     <%= javascript_include_tag :defaults %>
   </head>
   <body id="store">
+    <% form_tag '', :method => 'GET', :class => 'locale' do %>
+      <%= select_tag 'locale', options_for_select(LANGUAGES, I18n.locale.to_s),
+        :onchange => 'this.form.submit()' %>
+      <%= submit_tag 'submit' %>
+      <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
+    <% end %>
     <div id="banner">
       <%= image_tag("logo.png") %>
-      <%= @page_title || "Pragmatic Bookshelf" %>
+      <%= @page_title || I18n.t('layout.title') %>
     </div>
     <div id="columns">
       <div id="side">
@@ -20,18 +26,15 @@
             <%= render(:partial => "cart", :object => @cart) %>
           <% end %>
         <% end %>
-        <a href="http://www....">Home</a><br />
-        <a href="http://www..../faq">Questions</a><br />
-        <a href="http://www..../news">New</a><br />
-        <a href="http://www..../contact">Contact</a><br />
+        <%= link_to I18n.t('layout.side.home'), :controller => 'store' %><br />
+        <a href="http://www..../faq"><%= I18n.t 'layout.side.questions' %></a><br />
+        <a href="http://www..../news"><%= I18n.t 'layout.side.news' %></a><br />
+        <a href="http://www..../contact"><%= I18n.t 'layout.side.contact' %></a><br />
         <%#= @time %>
-
-        <br />
-        <%= link_to 'Store', :controller => 'store' %><br />
 
         <% unless session[:user_id] %>
           <br />
-          <%= link_to 'Log in', :controller => 'admin', :action => 'login' %><br />
+          <%= link_to I18n.t('layout.side.login'), :controller => 'admin', :action => 'login' %><br />
         <% end %>
 
         <% if session[:user_id] %>
@@ -47,16 +50,13 @@
       </div>
       <div id="main">
         <% if flash[:notice] -%>
-        <div id="notice"><%= flash[:notice] %></div>
+          <div id="notice"><%= flash[:notice] %></div>
         <% end -%>
-        <span id="counter">
-          <% if params[:action] == 'index' && session[:counter] \
-            && session[:counter] > 5 %>
-          You visited this page <%= pluralize(session[:counter], 'time') %>
-          <% end %>
-        </span>
-        
         <%= yield :layout %>
+      </div>
+      <div id="footer">
+        Powered by Ruby on Rails.<br />
+        © 2010 lynx_r. All rights reserved.<br />
       </div>
     </div>
   </body>

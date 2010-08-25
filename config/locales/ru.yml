@@ -1,0 +1,73 @@
+## YAML Template.
+
+ru:
+  layout:
+    title:            "Книжный магазин \"Прагматик\""
+    side:
+      home:           "Главная"
+      questions:      "ЧаВо"
+      news:           "Новости"
+      contact:        "Контакты"
+      login:          "Войти"
+    cart:
+      title:          "Ваша корзина"
+      button:
+        empty:        "Очистить корзину"
+        checkout:     "Купить"
+    cart_item:
+      button:
+        next:         "Убрать"
+
+  main:
+    title:            "Каталог"
+    button:
+      add:            "Добавить в корзину"
+
+  number:
+    currency:
+      format:
+        unit:         "р."
+        precision:    2
+        separator:    "."
+        delimiter:    ","
+        format:       "%n&nbsp;%u"
+
+  checkout:
+    legend:           "Пожалуйста, заполните форму"
+    name:             "Имя"
+    address:          "Адрес"
+    email:            "E-mail"
+    pay_type:         "Оплатить"
+    pay_prompt:       "Выбирете тип оплаты"
+    submit:           "Разместить заказ"
+
+  activerecord:
+    errors:
+      template:
+        body:         "Есть ошибки в следующих полях:"
+        header:
+          one:        "1 ошибка при попытки разместить {{model}}"
+          other:      "{{count}} ошибок при попытке разместить {{model}}"
+      messages:
+        inclusion:    "не включен в этот список"
+        blank:        "не может быть пустым"
+    models:
+      order:          "заказ"
+    attributes:
+      order:
+        address:      "Адрес"
+        name:         "Имя"
+        email:        "E-mail"
+        pay_type:     "Способ оплаты"
+
+  flash:
+    thanks:           "Спасибо за покупку!"
+    cart_empty:       "Ваша корзина пуста"
+    invalid_product:  "Неверный продукт"
+    
+  admin:
+    login:
+      legend:         "Пожалуйста, авторизуйтесь"
+      name:           "Имя"
+      password:       "Пароль"
+      login:          "Войти"

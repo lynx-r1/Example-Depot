@@ -1,14 +1,15 @@
 class Product < ActiveRecord::Base
+  has_many :orders, :through => :line_items
   has_many :line_items
 
   def self.find_products_for_sale
-    find(:all, :order => "title")
+    find(:all, :order => "title", :conditions => {:locale => I18n.locale.to_s} )
   end
 
   validates_presence_of :title, :description, :image_url
   validates_numericality_of :price, :message => "is not numeric!!!"
   validates_uniqueness_of :title, :message => "is not unique!"
-  validates_length_of :title, :maximum => 10
+  validates_length_of :title, :maximum => 50
   validates_format_of :image_url,
     :with    => %r{\.(gif|jpg|png)$}i,
     :message => 'must be a URL for GIF, JPG ' +

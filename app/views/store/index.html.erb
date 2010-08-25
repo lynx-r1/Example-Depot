@@ -1,4 +1,4 @@
-<h1>Your Pragmatic Catalog</h1>
+<h1><%= I18n.t 'main.title' %></h1>
 
 <% @products.each do |product| -%>
   <div class="entry">
@@ -8,10 +8,9 @@
     <h3><%=h product.title %></h3>
     <%= product.description %>
     <div class="price-line">
-      <span class="price"><%= number_to_currency(product.price,
-        :unit => "&euro;", :separator => ",", :delimiter => "") %></span>
+      <span class="price"><%= number_to_currency(product.price) %></span>
       <% form_remote_tag :url => { :action => 'add_to_cart', :id => product } do %>
-        <%= submit_tag "Add to Cart" %>
+        <%= submit_tag I18n.t('main.button.add') %>
       <% end %>
     </div>
   </div>

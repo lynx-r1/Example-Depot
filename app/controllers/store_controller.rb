@@ -8,6 +8,11 @@ class StoreController < ApplicationController
 
     session[:counter] = 1 if session[:counter].nil?
     session[:counter] += 1
+
+    respond_to do |format|
+      format.html
+      format.xml { render :layout => false }
+    end
   end
 
   def add_to_cart
@@ -17,7 +22,7 @@ class StoreController < ApplicationController
     respond_to_js_or_html
   rescue ActiveRecord::RecordNotFound
     logger.error("Attempt to access invalid product #{params[:id]}")
-    redirect_to_index("Invalid product")
+    redirect_to_index(I18n.t('flash.invalid_product'))
   end
 
   def empty_cart
@@ -39,7 +44,7 @@ class StoreController < ApplicationController
 
   def checkout
     if @cart.items.empty?
-      redirect_to_index("Your cart is empty")
+      redirect_to_index(I18n.t('flash.cart_empty'))
       @checkout = false
     else
       @order = Order.new
@@ -52,7 +57,7 @@ class StoreController < ApplicationController
     @order.add_line_items_from_cart(@cart)
     if @order.save
       session[:cart] = nil
-      redirect_to_index("Thank you for your order")
+      redirect_to_index(I18n.t('flash.thanks'))
       @checkout = false
     else
       render :action => 'checkout'

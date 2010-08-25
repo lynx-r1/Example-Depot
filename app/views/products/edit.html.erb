@@ -20,6 +20,10 @@
     <%= f.text_field :price %>
   </p>
   <p>
+    <%= f.label "Language" %><br />
+    <%= f.select :locale, LANGUAGES, :promt => "Select language" %>
+  </p>
+  <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>

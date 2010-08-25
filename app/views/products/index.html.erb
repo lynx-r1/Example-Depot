@@ -15,6 +15,7 @@
           <dd><%=h truncate(product.description.gsub(/<.*?>/, ''),
             :length => 80) %></dd>
         </dl>
+        Language: <%= product.locale %><br />
       </td>
 
       <td class="list-actions">

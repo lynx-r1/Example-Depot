@@ -1,4 +1,4 @@
-<div class="cart-title">Your Cart</div>
+<div class="cart-title"><%= I18n.t 'layout.cart.title' %></div>
 <table>
   <%= render(:partial => "cart_item", :collection => cart.items) %>
 
@@ -9,10 +9,12 @@
 </table>
 
 <p id="checkout">
-<%= button_to "Checkout", { :action => 'checkout' }, :disabled => @checkout %>
+<%= button_to I18n.t('layout.cart.button.checkout'), { :action => 'checkout' },
+  :disabled => @checkout %>
 </p>
 <p id="empty-cart">
 <% form_remote_tag  :url => { :action => 'empty_cart' } do %>
-  <%= submit_tag "Empty cart" %>
+  <%= submit_tag I18n.t('layout.cart.button.empty') %>
 <% end %>
 </p>
+<br />
