@@ -10,11 +10,12 @@
 
 <p id="checkout">
 <%= button_to I18n.t('layout.cart.button.checkout'), { :action => 'checkout' },
-  :disabled => @checkout %>
+  :disabled => @checkout, :class => "cart-button" %>
 </p>
 <p id="empty-cart">
 <% form_remote_tag  :url => { :action => 'empty_cart' } do %>
-  <%= submit_tag I18n.t('layout.cart.button.empty') %>
+  <%= submit_tag I18n.t('layout.cart.button.empty'), :class => "cart-button" %>
 <% end %>
 </p>
+<br />
 <br />

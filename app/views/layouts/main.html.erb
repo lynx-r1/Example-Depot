@@ -27,10 +27,9 @@
           <% end %>
         <% end %>
         <%= link_to I18n.t('layout.side.home'), :controller => 'store' %><br />
-        <a href="http://www..../faq"><%= I18n.t 'layout.side.questions' %></a><br />
-        <a href="http://www..../news"><%= I18n.t 'layout.side.news' %></a><br />
+        <%= link_to I18n.t('layout.side.questions'), :controller => 'faq' %><br />
+        <%= link_to I18n.t('layout.side.news'), :controller => 'news' %><br />
         <a href="http://www..../contact"><%= I18n.t 'layout.side.contact' %></a><br />
-        <%#= @time %>
 
         <% unless session[:user_id] %>
           <br />

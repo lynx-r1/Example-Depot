@@ -28,6 +28,10 @@ class Cart
     current_item
   end
 
+  def clear
+    @items.clear
+  end
+
   def del_item(item)
     @items.delete(item)
   end

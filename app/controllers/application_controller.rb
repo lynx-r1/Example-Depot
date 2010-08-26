@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
-  layout 'store'
+  layout 'main'
   
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
@@ -16,8 +16,10 @@ class ApplicationController < ActionController::Base
   protected
 
   def set_locale
+    prev_locale = session[:locale]
     session[:locale] = params[:locale] if params[:locale]
-    I18n.locale = session[:locale] || I18n.default_locale
+    locale = session[:locale] || I18n.default_locale
+    I18n.locale = locale 
 
     locale_path = "#{LOCALES_DIRECTORY}#{I18n.locale}.yml"
 
@@ -25,6 +27,9 @@ class ApplicationController < ActionController::Base
       I18n.load_path << locale_path
       I18n.backend.send(:init_translations)
     end
+
+    cart = session[:cart]
+    cart.clear if cart unless prev_locale == locale
 
   rescue Exception => err
     logger.error err
