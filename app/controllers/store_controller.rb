@@ -3,7 +3,6 @@ class StoreController < ApplicationController
 
   def index
     @products = Product.find_products_for_sale
-    @time = Time.now.ctime
     @checkout = false
 
     session[:counter] = 1 if session[:counter].nil?

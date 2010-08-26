@@ -1,4 +1,16 @@
 class PostsController < ApplicationController
+  def authorize
+  end
+
+  def news
+    @posts = Post.all
+
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @posts }
+    end
+  end
+
   # GET /posts
   # GET /posts.xml
   def index

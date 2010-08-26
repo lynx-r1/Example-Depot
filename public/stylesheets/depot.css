@@ -54,6 +54,33 @@ h1 {
   background:   #f8b0f8;
 }
 
+#news-list .list-item {
+    border: solid #5c61b6 1px;
+    padding: 5px;
+}
+
+#news-list .list-item dl {
+    margin: 0;
+}
+
+#news-list .list-item dt {
+    color:        #244;
+    font-weight:  bold;
+    font-size:    larger;
+}
+
+#news-list .list-item dd {
+    margin: 0;
+}
+
+#news-list .list-line-even {
+    background:   #e0f8f8;
+}
+
+#news-list .list-line-odd {
+    background:   #fddfeb;
+}
+
 #store {
     background: #ddfece;
 /*    background-image: url("../images/background.jpg")*/

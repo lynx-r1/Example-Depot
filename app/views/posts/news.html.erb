@@ -1,0 +1,21 @@
+<div id="news-list">
+  <h1><%= I18n.t "posts.news.title" %></h1>
+
+  <table>
+    <% @posts.sort { |p1,p2| p1.created_at <=> p2.created_at }.reverse_each do |post| %>
+    <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+      <td class="list-item">
+        <span style="float: right; font-size: small">
+          <%= Time.at(post.created_at.to_i).strftime(I18n.t('posts.news.time.created_on') \
+              + " %m/%d/%Y " + I18n.t('posts.news.time.at') + " %H:%M") %>
+        </span>
+        <dl>
+          <dt><%=h post.title %></dt>
+          <dd><%=h truncate(post.body.gsub(/<.*?>/, ''), :length => 80) %></dd>
+        </dl>
+        <%=h I18n.t('posts.news.author') + ': ' + post.author %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>

@@ -73,3 +73,12 @@ en:
     a2:               "To study Ruby on Rails."
     q3:               "Who are you?"
     a3:               "I am programmer."
+
+  posts:
+    news:
+      title:          "News"
+      author:         "Author"
+      time:
+        created_on:     "Created on"
+        at:             "at"
+

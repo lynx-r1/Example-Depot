@@ -92,3 +92,11 @@ ru:
     a2:               "Чтобы изучить Ruby on Rails."
     q3:               "Кто ты?"
     a3:               "Я программист."
+
+  posts:
+    news:
+      title:          "Новости"
+      author:         "Автор"
+      time:
+        created_on:     "Создан"
+        at:             "в"
