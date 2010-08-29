@@ -29,7 +29,7 @@
         <%= link_to I18n.t('layout.side.home'), :controller => 'store' %><br />
         <%= link_to I18n.t('layout.side.questions'), :controller => 'faq' %><br />
         <%= link_to I18n.t('layout.side.news'), :controller => 'posts', :action => 'news' %><br />
-        <a href="http://www..../contact"><%= I18n.t 'layout.side.contact' %></a><br />
+        <%= link_to I18n.t('layout.side.contact'), "../base" %><br />
 
         <% unless session[:user_id] %>
           <br />

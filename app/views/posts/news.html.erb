@@ -11,9 +11,11 @@
         </span>
         <dl>
           <dt><%=h post.title %></dt>
-          <dd><%=h truncate(post.body.gsub(/<.*?>/, ''), :length => 80) %></dd>
+          <dd><%=h truncate(post.body.gsub(/<.*?>/, ''), :length => 256) %></dd>
         </dl>
-        <%=h I18n.t('posts.news.author') + ': ' + post.author %>
+        <span style="font-size: small">
+          <%=h I18n.t('posts.news.author') + ': ' + post.author %>
+        </span>
       </td>
     </tr>
   <% end %>

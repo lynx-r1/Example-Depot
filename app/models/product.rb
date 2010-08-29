@@ -9,7 +9,7 @@ class Product < ActiveRecord::Base
   validates_presence_of :title, :description, :image_url
   validates_numericality_of :price
   validates_uniqueness_of :title
-#  validates_length_of :title, :maximum => 50
+  validates_length_of :title, :maximum => 100
   validates_format_of :image_url,
     :with    => %r{\.(gif|jpg|png)$}i,
     :message => 'must be a URL for GIF, JPG ' +

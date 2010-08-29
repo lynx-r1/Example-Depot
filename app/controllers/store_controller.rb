@@ -15,7 +15,6 @@ class StoreController < ApplicationController
   end
 
   def add_to_cart
-    session[:counter] = 0
     product = Product.find(params[:id])
     @current_item = @cart.add_product(product)
     respond_to_js_or_html

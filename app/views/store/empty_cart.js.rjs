@@ -1,1 +1,4 @@
 page[:cart].visual_effect :blind_up
+page.delay(1) do
+  page.redirect_to :action => "index"
+end

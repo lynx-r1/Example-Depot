@@ -94,7 +94,7 @@ h1 {
   border-bottom: 1px dotted #77d;
 }
 
-#store #greating {
+#store #greeting {
     font-weight: bold;
     font-size: large;
     color: #338833;
@@ -291,6 +291,7 @@ h1 {
 }
 
 #cart table {
+    max-width: 5em;
     border-top: 1px dotted #595;
     border-bottom: 1px dotted #595;
     margin-bottom: 10px;

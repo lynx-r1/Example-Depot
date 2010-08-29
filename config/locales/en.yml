@@ -20,7 +20,7 @@ en:
         next:         "Next"
 
   main:
-    greating:         "Welcome!"
+    greeting:         "Welcome!"
     intro_message:    "I welcome you! You have come on a Internet-shop \
        \"Pragmatic\". Actually it not the Internet-shop, and only a Web \
        application simulating its work. It has been created for the purpose \
