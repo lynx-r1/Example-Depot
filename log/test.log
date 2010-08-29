@@ -110,3 +110,16 @@
   [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'My Book Title') LIMIT 1[0m
   [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
   [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = 'Programming Ruby') LIMIT 1[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 80244333) [0m
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
