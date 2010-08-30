@@ -2,13 +2,12 @@
   <%= I18n.t('main.greeting') %>
 </p>
 <div id="intro-message"><%= I18n.t('main.intro_message') %></div>
-
+<div id="admin-access"><%= I18n.t('main.admin_access') %></div>
 
 <h1><%= I18n.t 'main.title' %></h1>
 
 <% @products.each do |product| -%>
   <div class="entry">
-    
     <% form_remote_tag :url => { :action => 'add_to_cart', :id => product } do %>
       <%= image_submit_tag product.image_url, :class => 'image-submit' %>
     <% end %>

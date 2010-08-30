@@ -1,3 +1,19 @@
 <%#= I18n.t('order_mailer.confirm.title') + @order.name %>
-<%= I18n.t('order_mailer.confirm.message') %>
+<%#= I18n.t('order_mailer.confirm.message') %>
 <%#= render(:partial => "line_item", :collection => @order.line_items) %>
+
+<h3>Доброе время суток</h3>
+<p>
+  Вы заказали:
+</p>
+
+<table>
+  <tr>
+    <th colspan="2">Qty</th>
+    <th>Description</th>
+  </tr>
+  <%= render(:partial => "html_line_item", :collection => @order.line_items) %>
+</table>
+<p>
+  К сожелению это не настоящий интернет магазин, поэтому заказ выполнен не будет. ;)
+</p>

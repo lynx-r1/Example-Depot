@@ -18,11 +18,11 @@ config.action_mailer.raise_delivery_errors = true
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
   :address        => "smtp.yandex.ru",
-  :port           => 25,
+  :port           => 587,
   :domain         => "localhost",
   :authentication => :login,
   :user_name      => "alex-86p",
   :password       => "xfr_yjhhbc"
 }
-config.action_mailer.perform_deliveries = false
+config.action_mailer.perform_deliveries = true
 config.action_mailer.default_charset = "utf-8"

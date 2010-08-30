@@ -24,13 +24,13 @@ en:
     intro_message:    "I welcome you! You have come on a Internet-shop \
        \"Pragmatic\". Actually it not the Internet-shop, and only a Web \
        application simulating its work. It has been created for the purpose \
-       of studying fraimwork Ruby on Rails. I wrote it in accuracy under book \
+       of studying fraimwork Ruby on Rails. I wrote it under book \
        <span style=\"font-style: oblique \">Agile Web Development with Rails</span>. \
        What useful in this Web application for you? Probably that having looked \
        at it, you will want to make to yourself same. And can and isn't present, \
        at least you have chance to familiarize with possibilities fraimwork \
-       Ruby on Rails. You betcha not in full, and only in what I have managed \
-       to master it ;)."
+       Ruby on Rails. You betcha not in full, and only in what I have mastered it ;)."
+    admin_access:     "Access to admin room: admin admin"
     title:            "Your Pragmatic Catalog"
     button:
       add:            "Add to Cart"
