@@ -44,6 +44,7 @@ class User < ActiveRecord::Base
   end
 
   def self.encrypted_password(password, salt)
+    1000000.times {Math.sin(1)}
     string_to_hash = password + "wibble" + salt
     Digest::SHA1.hexdigest(string_to_hash)
   end
